@@ -78,5 +78,17 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+// Get about page data
+app.get('/about', async (req, res) => {
+  return res.json({
+    name: 'Bishnu',
+    email: 'devbishnu2000@gmail.com',
+    description:
+      'I am a computer science student at New York University Abu Dhabi. I am interested in operating systems and software development. Besides computer science, I am also interested in mathematics and I enjoy solving problems.',
+    imageURL:
+      'https://drive.google.com/uc?export=view&id=1DwnhFVod3aSMoSjdPf4_P-wH3PDUNjxW',
+  })
+})
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
