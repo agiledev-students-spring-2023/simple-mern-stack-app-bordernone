@@ -1,5 +1,4 @@
 import './About.css'
-import img from './assets/image.jpg'
 import { useEffect, useState } from 'react'
 
 const About = props => {
